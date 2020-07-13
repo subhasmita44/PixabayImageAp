@@ -48,6 +48,5 @@ public class MainActivityTest {
          RecyclerView recyclerView=activityActivityTestRule.getActivity().findViewById(R.id.rvPhoto);
          int itemCount=recyclerView.getAdapter().getItemCount();
          Espresso.onView(withId(R.id.rvPhoto)).perform(RecyclerViewActions.actionOnItemAtPosition(3,click()));
-
     }
 }
